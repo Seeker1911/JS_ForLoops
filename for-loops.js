@@ -15,10 +15,11 @@ for (i = Math.floor(4096); i > 0; i /= 2) {
 var presidents = ["washington", "jackson", "lincoln"];
 for (var p = 0; p < presidents.length; p++) {
 	presidents[p];
-	console.log("president",presidents[p] );
+	// console.log("president", presidents[p]);
+	var stringCat = presidents.join();
+	console.log("concatanate: ", stringCat);
 };
-
-// Use can use another kind of for loop to iterate over objects. Iterate over the object below and use console.log() 
+// you can use another kind of for loop to iterate over objects. Iterate over the object below and use console.log() 
 // to output the names of the keys in the object.
 var antSpecies = {
   "argentine": {},
@@ -34,3 +35,7 @@ var antSpecies = {
   "jack jumper": {}
 }
 
+    
+for (var prop in antSpecies) {
+  console.log(prop);
+}
